@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <title>ComGuard</title>
+</head>
+<body class="font-Jakarta tracking-tight">
+    <!-- Header and Navbar -->
+    <header>
+        <!-- Navbar -->
+        <nav class="bg-bgMain">
+           <!-- Nav Container -->
+           <div class="container mx-auto flex items-center justify-between space-x-20 py-6">
+                 <!-- Logo -->
+                <div class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                    </svg>
+                    <h3 class="font-bold tracking-wide uppercase text-white">COMMENTGUARD</h3>
+                </div>
+                <!-- Login Button -->
+                <a href="#" class="btn-nav hidden md:block">Login</a>
+                <!-- Hamburger -->
+                <div class="block cursor-pointer md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                      
+                </div>
+           </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-bgMain">
+        <!-- Hero Container -->
+        <div class="container flex flex-col-reverse mx-auto p-14 md:flex-row space-y-6 md:space-y-0">
+            <!-- Hero Content -->
+            <div class="flex flex-col space-y-6">
+                <h3 class="font-bold text-4xl leading-normal text-white">
+                    The #1 moderation tool for <span class="text-green-600">Facebook and Instagram</span>
+                </h3>
+                <p class="text-lg md:text-xl text-white">Are you tired of removing dumb comments on your ads?</p>
+                <p class="text-lg md:text-xl text-white">CommentGuard™ moderation software detects harmful comments and hides them on your behalf 24/7/365.</p>
+                <!-- Button -->
+                <div class="py-2">
+                    <a href="#pricing" class="btn-main tracking-tight">Start your free trial</a>
+                </div>
+                <p class="text-green-400">Free for 7 days, no credit card required.</p>
+                <p class="text-lg md:text-xl text-white">We support real-time comment moderation on:</p>
+                <!-- Socials Hero -->
+                <!-- Socials 1 -->
+                <div class="flex space-x-1 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                      </svg>
+                      <p class="text-white">Facebook organic page posts & ads.</p>
+                </div>
+                <!-- Socials 2 -->
+                <div class="flex space-x-1 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                      </svg>
+                      <p class="text-white">Instagram organic posts, stories, reels & ads.</p>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <img src="../images/hero-three.png" alt="" class="hidden flex-1 w-full md:block md:w-1/2 md:object-cover">
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <!-- Reviews Container -->
+        <div class="container flex flex-col justify-between items-center mt-10 p-6 mx-auto space-y-10 md:flex-row md:space-y-0 md:space-x-2">
+
+            <!-- Review 1 -->
+            <div class="flex flex-col items-center space-y-2 w-full md:w-1/3 mb-2 md:mb-0">
+                
+                <!-- SVG -->
+               <div class="flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+
+               </div>
+
+                <!-- Contents -->
+                <p class="text-sm md:text-base pb-3 text-center">CommentGuard keeping my comments free<br> of spam has <span class="font-bold">noticeably increased my ads'<br> conversion rates</span>. It has been an absolute<br> game changer for my business.</p>
+                <p class="text-sm font-bold">Eric Smith</p>
+                <p class="text-xs">Founder of NicheScraper</p>
+
+                <!-- Avatar -->
+                <div>
+                    <img src="../images/pfp-two.jpg" alt="image" class="w-12 h-12 rounded-full object-cover">
+                </div>
+            </div>
+           
+            <!-- Review 2 -->
+            <div class="flex flex-col items-center space-y-2 w-full md:w-1/3 mb-2 md:mb-0">
+                
+                <!-- SVG -->
+               <div class="flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+
+               </div>
+
+                <!-- Contents -->
+                <p class="text-sm md:text-base pb-3 text-center">CommentGuard gives me <span class="font-bold">peace of mind<br> that my ad or post comments aren't going<br> to be spammed</span>. Truly, I don't know what<br> small business owners do without it.</p>
+                <p class="text-sm font-bold">Pamela Fletcher</p>
+                <p class="text-xs">Founder of The Dizzy Knitter</p>
+
+                <!-- Avatar -->
+                <div>
+                    <img src="../images/pfp-three.jpg" alt="image" class="w-12 h-12 rounded-full object-cover">
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="flex flex-col items-center space-y-2 w-full md:w-1/3 mb-2 md:mb-0">
+                
+                <!-- SVG -->
+               <div class="flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+
+               </div>
+
+                <!-- Contents -->
+                <p class="text-sm md:text-base pb-3 text-center">CommentGuard has gone from a great idea<br> to <span class="font-bold">our go-to platform for monitoring and<br> managing comments</span>. In short, nothing<br>drops through the cracks.</p>
+                <p class="text-sm font-bold">Peter Julian</p>
+                <p class="text-xs">CEO of BrainSpeak</p>
+
+                <!-- Avatar -->
+                <div>
+                    <img src="../images/pfp-one.jpg" alt="image" class="w-12 h-12 rounded-full object-cover">
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-gray-200 bg-opacity-50">
+        <div class="container mx-auto mt-10 p-16">
+
+            <!-- Heading Section -->
+            <div class="">
+                <h2 class="font-bold text-3xl md:text-4xl text-center mb-3 md:mb-2">Automatically remove harmful comments.</h2>
+                <p class="text-sm text-center tracking-wide">CommentGuard hides unwanted comments, making sure no damage is done to your campaigns</p>
+            </div>
+
+            <!-- Features Boxes -->
+            <!-- Features Boxes Container -->
+            <div class="flex flex-col flex-wrap justify-center mt-10 md:flex-row space-y-10">
+
+                <!-- BOX 1 -->
+                <div class="flex flex-col items-center text-center p-4 space-y-2 rounded-md shadow-lg md:w-1/3">
+                    <!-- SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock mt-10 mb-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="12" r="9" />
+                        <polyline points="12 7 12 12 15 15" />
+                    </svg>
+    
+                    <!-- Box Contents -->
+                    <h3 class="font-bold text-xl md:text-2xl w-full">Stress-free moderation</h3>
+                    <p class="mb-3">We moderate your comments 24/7, so you can review when it suits you.</p>
+                </div>
+
+                <!-- BOX 2 -->
+                <div class="flex flex-col items-center text-center p-4 space-y-2 rounded-md shadow-lg md:w-1/3">
+                    <!-- SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-off mb-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="3" y1="3" x2="21" y2="21" />
+                        <path d="M10.584 10.587a2 2 0 0 0 2.828 2.83" />
+                        <path d="M9.363 5.365a9.466 9.466 0 0 1 2.637 -.365c4 0 7.333 2.333 10 7c-.778 1.361 -1.612 2.524 -2.503 3.488m-2.14 1.861c-1.631 1.1 -3.415 1.651 -5.357 1.651c-4 0 -7.333 -2.333 -10 -7c1.369 -2.395 2.913 -4.175 4.632 -5.341" />
+                    </svg>
+    
+                    <!-- Box Contents -->
+                    <h3 class="font-bold text-xl md:text-2xl">Real-time protection</h3>
+                    <p class="mb-3">Unwanted comments are hidden within just seconds of being posted.</p>
+                </div>
+
+                <!-- BOX 3 -->
+                <div class="flex flex-col items-center text-center p-4 space-y-2 rounded-md shadow-lg md:w-1/3">
+                    <!-- SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list-details mb-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M13 5h8" />
+                        <path d="M13 9h5" />
+                        <path d="M13 15h8" />
+                        <path d="M13 19h5" />
+                        <rect x="3" y="4" width="6" height="6" rx="1" />
+                        <rect x="3" y="14" width="6" height="6" rx="1" />
+                    </svg>
+    
+                    <!-- Box Contents -->
+                    <h3 class="font-bold text-xl md:text-2xl">Never miss a comment</h3>
+                    <p class="mb-3">Manage all your comments on all your pages and ads in one dashboard.</p>
+                </div>
+
+                <!-- BOX 4 -->
+                <div class="flex flex-col items-center text-center p-4 space-y-2 rounded-md shadow-lg md:w-1/3">
+                    <!-- SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-track-next mb-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 5v14l8 -7z" />
+                        <path d="M14 5v14l8 -7z" />
+                    </svg>
+    
+                    <!-- Box Contents -->
+                    <h3 class="font-bold text-xl md:text-2xl">Save valuable time</h3>
+                    <p class="mb-3">Like, hide, delete, ban, reply and even private message faster than ever.</p>
+                </div>
+                
+                <!-- BOX 5 -->
+                <div class="flex flex-col items-center text-center p-4 space-y-2 rounded-md shadow-lg md:w-1/3">
+                    <!-- SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users mb-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                    </svg>
+    
+                    <!-- Box Contents -->
+                    <h3 class="font-bold text-xl md:text-2xl">Safe collaboration</h3>
+                    <p class="mb-3">Work with a team without the risk of sharing access to your social accounts.</p>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="flex justify-center items-center mx-auto mt-14">
+                <a href="#pricing" class="btn-main">Start your free trial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 1 -->
+    <section class="mt-14">
+        <div class="container mx-auto">
+            <!-- Heading Section -->
+            <div class="text-center space-y-2">
+                <h3 class="text-2xl md:text-3xl font-bold">Don't settle for the basics.</h3>
+                <p>Social media platforms just rely on a basic profanity filter and a list of bad words.</p>
+            </div>
+
+            <!-- Bullet Points -->
+            <div class="flex flex-col items-center justify-center space-y-10 md:flex-row md:space-y-0 md:space-x-3 m-10">
+                <!-- Point 1 -->
+                <div class="flex flex-col items-center justify-center text-center w-full md:w-1/3">
+                    <!-- SVG -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-x mb-3" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <path d="M10 10l4 4m0 -4l-4 4" />
+                        </svg>
+                    </div>
+
+                    <!-- Contents -->
+                    <h3 class="font-bold text-xl">Works only in English</h3>
+                    <p>The profanity filter of both platforms works just in English, no other languages.</p>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="flex flex-col items-center justify-center text-center w-full md:w-1/3">
+                    <!-- SVG -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-x mb-3" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <path d="M10 10l4 4m0 -4l-4 4" />
+                        </svg>
+                    </div>
+
+                    <!-- Contents -->
+                    <h3 class="font-bold text-xl">No creative spelling</h3>
+                    <p>Native filters will detect normal spelling, but not "fck ff lrdy" or "fck Off 4lr34dy".</p>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="flex flex-col items-center justify-center text-center w-full md:w-1/3">
+                    <!-- SVG -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-x mb-3" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <path d="M10 10l4 4m0 -4l-4 4" />
+                        </svg>
+                    </div>
+
+                    <!-- Contents -->
+                    <h3 class="font-bold text-xl">Just a pre-defined list</h3>
+                    <p>Many bad statements will not include your specifically blacklisted bad words.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="bg-gray-200 bg-opacity-50">
+        <div class="container mx-auto m-14">
+            <!-- Heading -->
+            <div class="text-center mt-18">
+                <h3 class="font-bold text-3xl">Here's how it works:</h3>
+                <p class="text-lg">Watch our 60 seconds product demo</p>
+            </div>
+
+            <!-- Video Section -->
+            <div class="container mx-auto cursor-pointer bg-video h-full w-full m-7">
+                <video class="video" controls src="../images/explainer-video.mp4"></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra Reviews -->
+    <section class="bg-gray-200 bg-opacity-50">
+         <!-- Extra Reviews -->
+         <div class="container flex flex-col justify-between items-center mt-10 p-6 space-y-10 md:space-y-0 md:space-x-4 mx-auto md:flex-row">
+
+            <!-- Review 1 -->
+            <div class="flex flex-col items-center space-y-2 w-full md:w-1/2 mb-2 md:mb-0">
+                
+                <!-- SVG -->
+               <div class="flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+
+               </div>
+
+                <!-- Contents -->
+                <p class="text-sm md:text-base pb-3 text-center">CommentGuard keeping my comments free<br> of spam has <span class="font-bold">noticeably increased my ads'<br> conversion rates</span>. It has been an absolute<br> game changer for my business.</p>
+                <p class="text-sm font-bold">Eric Smith</p>
+                <p class="text-xs">Founder of NicheScraper</p>
+
+                <!-- Avatar -->
+                <div>
+                    <img src="../images/pfp-two.jpg" alt="image" class="w-12 h-12 rounded-full object-cover">
+                </div>
+            </div>
+           
+            <!-- Review 2 -->
+            <div class="flex flex-col items-center space-y-2 w-full md:w-1/2 mb-2 md:mb-0">
+                
+                <!-- SVG -->
+               <div class="flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+
+               </div>
+
+                <!-- Contents -->
+                <p class="text-sm md:text-base pb-3 text-center">CommentGuard gives me <span class="font-bold">peace of mind<br> that my ad or post comments aren't going<br> to be spammed</span>. Truly, I don't know what<br> small business owners do without it.</p>
+                <p class="text-sm font-bold">Pamela Fletcher</p>
+                <p class="text-xs">Founder of The Dizzy Knitter</p>
+
+                <!-- Avatar -->
+                <div>
+                    <img src="../images/pfp-three.jpg" alt="image" class="w-12 h-12 rounded-full object-cover">
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Extra Features -->
+    <section id="extra" class="bg-gray-200 bg-opacity-50">
+        <div class="container mx-auto m-14">
+            <!-- Heading -->
+            <div class="text-center space-y-4">
+                <h3 class="font-bold text-2xl md:text-3xl">Leverage machine learning to keep your comments clean</h3>
+                <p>Comments that trigger your filters will be hidden within seconds of being posted.</p>
+            </div>
+
+            <!-- Extra Features Container -->
+            <div class="flex flex-col justify-between items-center m-6 flex-wrap space-y-10 md:space-y-0 md:flex-row">
+
+                <!-- Feature 1 -->
+                <div class="flex flex-col bg-white rounded-lg p-6 shadow-lg w-full md:w-1/3 space-y-2">
+                    <!-- SVG -->
+                    <div>
+                        <svg fill="#38a169" width="32px" height="32px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"><title>ionicons-v5-k</title><path d="M368,112H144C64.6,112,0,176.6,0,256S64.6,400,144,400H368c79.4,0,144-64.6,144-144S447.4,112,368,112Zm0,256A112,112,0,1,1,480,256,112.12,112.12,0,0,1,368,368Z"></path></g></svg>
+                    </div>
+                    <!-- Contents -->
+                    <h3 class="font-bold text-2xl">Hide toxicity</h3>
+                    <p>Automatically hide comments that readers will perceive as toxic (rude, disrespectful, abusive or unreasonable).</p>
+                    <!-- Image -->
+                    <div class="flex justify-center">
+                        <img src="../images/toxicity.jpg" alt="toxicity">
+                    </div>
+                </div>
+
+                 <!-- Feature 2 -->
+                 <div class="flex flex-col bg-white rounded-lg p-6 shadow-lg w-full md:w-1/3 space-y-2">
+                    <!-- SVG -->
+                    <div>
+                        <svg fill="#38a169" width="32px" height="32px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"><title>ionicons-v5-k</title><path d="M368,112H144C64.6,112,0,176.6,0,256S64.6,400,144,400H368c79.4,0,144-64.6,144-144S447.4,112,368,112Zm0,256A112,112,0,1,1,480,256,112.12,112.12,0,0,1,368,368Z"></path></g></svg>
+                    </div>
+                    <!-- Contents -->
+                    <h3 class="font-bold text-2xl">Profanity</h3>
+                    <p>Automatically hide comments that contain profane language, including even the most creative spelling.</p>
+                    <!-- Image -->
+                    <div class="flex justify-center">
+                        <img src="../images/profanity.jpg" alt="toxicity">
+                    </div>
+                </div>
+
+                 <!-- Feature 3 -->
+                 <div class="flex flex-col bg-white rounded-lg p-6 shadow-lg w-full md:w-1/3 space-y-2">
+                    <!-- SVG -->
+                    <div>
+                        <svg fill="#38a169" width="32px" height="32px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"><title>ionicons-v5-k</title><path d="M368,112H144C64.6,112,0,176.6,0,256S64.6,400,144,400H368c79.4,0,144-64.6,144-144S447.4,112,368,112Zm0,256A112,112,0,1,1,480,256,112.12,112.12,0,0,1,368,368Z"></path></g></svg>
+                    </div>
+                    <!-- Contents -->
+                    <h3 class="font-bold text-2xl">URLs</h3>
+                    <p>Automatically hide comments that contain spammy URLs that try to hijack your ad and lure people away.</p>
+                    <!-- Image -->
+                    <div class="flex justify-center">
+                        <img src="../images/URLs.jpg" alt="toxicity">
+                    </div>
+                </div>
+
+                 <!-- Feature 4 -->
+                 <div class="flex flex-col bg-white rounded-lg p-6 shadow-lg w-full md:w-1/3 space-y-2">
+                    <!-- SVG -->
+                    <div>
+                        <svg fill="#38a169" width="32px" height="32px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"><title>ionicons-v5-k</title><path d="M368,112H144C64.6,112,0,176.6,0,256S64.6,400,144,400H368c79.4,0,144-64.6,144-144S447.4,112,368,112Zm0,256A112,112,0,1,1,480,256,112.12,112.12,0,0,1,368,368Z"></path></g></svg>
+                    </div>
+                    <!-- Contents -->
+                    <h3 class="font-bold text-2xl">Images</h3>
+                    <p>Automatically hide comments that contain images, videos or GIFs, which are often used to circumvent moderation.</p>
+                    <!-- Image -->
+                    <div class="flex justify-center">
+                        <img src="../images/images.jpg" alt="toxicity">
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="flex flex-col bg-white rounded-lg p-6 shadow-lg w-full md:w-1/3 space-y-2">
+                    <!-- SVG -->
+                    <div>
+                        <svg fill="#38a169" width="32px" height="32px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"><title>ionicons-v5-k</title><path d="M368,112H144C64.6,112,0,176.6,0,256S64.6,400,144,400H368c79.4,0,144-64.6,144-144S447.4,112,368,112Zm0,256A112,112,0,1,1,480,256,112.12,112.12,0,0,1,368,368Z"></path></g></svg>
+                    </div>
+                    <!-- Contents -->
+                    <h3 class="font-bold text-2xl">Emojis</h3>
+                    <p>Automatically hide comments that contain emojis. You can choose to hide all emojis or select just specific emojis.</p>
+                    <!-- Image -->
+                    <div class="flex justify-center">
+                        <img src="../images/emojis.jpg" alt="toxicity">
+                    </div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="flex flex-col bg-white rounded-lg p-6 shadow-lg w-full md:w-1/3 space-y-2">
+                    <!-- SVG -->
+                    <div>
+                        <svg fill="#38a169" width="32px" height="32px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"><title>ionicons-v5-k</title><path d="M368,112H144C64.6,112,0,176.6,0,256S64.6,400,144,400H368c79.4,0,144-64.6,144-144S447.4,112,368,112Zm0,256A112,112,0,1,1,480,256,112.12,112.12,0,0,1,368,368Z"></path></g></svg>
+                    </div>
+                    <!-- Contents -->
+                    <h3 class="font-bold text-2xl">Keywords</h3>
+                    <p>Automatically hide comments that contain specific words, like for example the names of your competitors.</p>
+                    <!-- Image -->
+                    <div class="flex justify-center">
+                        <img src="../images/keywords.jpg" alt="toxicity">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Powerful Features -->
+    <section id="powerful-features">
+        <div class="container mx-auto m-10">
+            <!-- Headings -->
+            <h3 class="text-center text-xl md:text-3xl font-bold">Even more powerful features</h3>
+
+            <!-- P-Features Container -->
+            <div class="flex flex-col flex-wrap md:flex-row space-y-10 items-center m-10">
+
+                <!-- BOX 1 -->
+                <div class="flex flex-col space-y-2 items-center justify-center text-center w-full md:w-1/4">
+                    <!-- SVG -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" id="IconChangeColor" class="mt-10" height="32" width="32"><path fill="transparent" d="M19 6v5H5V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" id="mainIconPathAttribute"></path><path stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 11h2m16.5 0H19m0 0V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v5m14 0H5" id="mainIconPathAttribute"></path><circle cx="7" cy="17" r="3" fill="transparent" stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle><circle cx="17" cy="17" r="3" fill="transparent" stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle><path stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 16h4" id="mainIconPathAttribute"></path></svg>
+                    </div>
+                    <!-- CONTENTS -->
+                    <p class="text-xl text-center font-bold">Private Mode</p>
+                    <p class="text-sm text-center">Auto-hide all comments</p>
+                </div>
+                 <!-- BOX 2 -->
+                 <div class="flex flex-col space-y-2 items-center justify-center text-center w-full md:w-1/4">
+                    <!-- SVG -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+                            <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+                        </svg>
+                    </div>
+                    <!-- CONTENTS -->
+                    <p class="text-xl text-center font-bold">Saved replies</p>
+                    <p class="text-sm text-center">Insert saved comment replies</p>
+                </div>
+                 <!-- BOX 3 -->
+                 <div class="flex flex-col space-y-2 items-center justify-center text-center w-full md:w-1/4">
+                    <!-- SVG -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box-margin" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M8 8h8v8h-8z" />
+                            <path d="M4 4v.01" />
+                            <path d="M8 4v.01" />
+                            <path d="M12 4v.01" />
+                            <path d="M16 4v.01" />
+                            <path d="M20 4v.01" />
+                            <path d="M4 20v.01" />
+                            <path d="M8 20v.01" />
+                            <path d="M12 20v.01" />
+                            <path d="M16 20v.01" />
+                            <path d="M20 20v.01" />
+                            <path d="M20 16v.01" />
+                            <path d="M20 12v.01" />
+                            <path d="M20 8v.01" />
+                            <path d="M4 16v.01" />
+                            <path d="M4 12v.01" />
+                            <path d="M4 8v.01" />
+                        </svg>
+                    </div>
+                    <!-- CONTENTS -->
+                    <p class="text-xl text-center font-bold">Bulk actions</p>
+                    <p class="text-sm text-center">Bulk hide, unhide, and delete.</p>
+                </div>
+                 <!-- BOX 4 -->
+                 <div class="flex flex-col space-y-2 items-center justify-center text-center w-full md:w-1/4">
+                    <!-- SVG -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 20l-3 -3h-2a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-2l-3 3" />
+                            <line x1="8" y1="9" x2="16" y2="9" />
+                            <line x1="8" y1="13" x2="14" y2="13" />
+                        </svg>
+                    </div>
+                    <!-- CONTENTS -->
+                    <p class="text-xl text-center font-bold">Auto-replies</p>
+                    <p class="text-sm text-center">Auto-reply based on keywords.</p>
+                </div>
+                 <!-- BOX 5 -->
+                 <div class="flex flex-col space-y-2 items-center justify-center text-center w-full md:w-1/4">
+                    <!-- SVG -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zoom-check" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="10" cy="10" r="7" />
+                            <path d="M21 21l-6 -6" />
+                            <path d="M7 10l2 2l4 -4" />
+                        </svg>
+                    </div>
+                    <!-- CONTENTS -->
+                    <p class="text-xl text-center font-bold">Previews</p>
+                    <p class="text-sm text-center">See comments in contexts</p>
+                </div>
+                 <!-- BOX 6 -->
+                 <div class="flex flex-col space-y-2 items-center justify-center text-center w-full md:w-1/4">
+                    <!-- SVG -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" id="IconChangeColor" height="32" width="32"><path fill="#38a169" d="M19 6v5H5V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" id="mainIconPathAttribute"></path><path stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 11h2m16.5 0H19m0 0V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v5m14 0H5" id="mainIconPathAttribute"></path><circle cx="7" cy="17" r="3" fill="#38a169" stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle><circle cx="17" cy="17" r="3" fill="#38a169" stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle><path stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16h4" id="mainIconPathAttribute"></path></svg>
+                    </div>
+                    <!-- CONTENTS -->
+                    <p class="text-xl text-center font-bold">Private Mode</p>
+                    <p class="text-sm text-center">Auto-hide all comments</p>
+                </div>
+                 <!-- BOX 7 -->
+                 <div class="flex flex-col space-y-2 items-center justify-center text-center w-full md:w-1/4">
+                    <!-- SVG -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" id="IconChangeColor" height="32" width="32"><path fill="#38a169" d="M19 6v5H5V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" id="mainIconPathAttribute"></path><path stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 11h2m16.5 0H19m0 0V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v5m14 0H5" id="mainIconPathAttribute"></path><circle cx="7" cy="17" r="3" fill="#38a169" stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle><circle cx="17" cy="17" r="3" fill="#38a169" stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle><path stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16h4" id="mainIconPathAttribute"></path></svg>
+                    </div>
+                    <!-- CONTENTS -->
+                    <p class="text-xl text-center font-bold">Private Mode</p>
+                    <p class="text-sm text-center">Auto-hide all comments</p>
+                </div>
+                 <!-- BOX 8 -->
+                 <div class="flex flex-col space-y-2 items-center justify-center text-center w-full md:w-1/4">
+                    <!-- SVG -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" id="IconChangeColor" height="32" width="32"><path fill="#38a169" d="M19 6v5H5V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" id="mainIconPathAttribute"></path><path stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 11h2m16.5 0H19m0 0V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v5m14 0H5" id="mainIconPathAttribute"></path><circle cx="7" cy="17" r="3" fill="#38a169" stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle><circle cx="17" cy="17" r="3" fill="#38a169" stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle><path stroke="#38a169" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16h4" id="mainIconPathAttribute"></path></svg>
+                    </div>
+                    <!-- CONTENTS -->
+                    <p class="text-xl text-center font-bold">Private Mode</p>
+                    <p class="text-sm text-center">Auto-hide all comments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+</html>

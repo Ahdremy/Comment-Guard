@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-nav{
+        @apply bg-green-600 px-6 py-2 tracking-wide text-white font-semibold rounded-lg shadow-sm hover:bg-green-700
+    }
+
+    .btn-main{
+        @apply bg-green-600 px-6 py-4 tracking-wide text-xl text-white font-bold rounded-lg shadow-sm hover:bg-green-700
+    }
+}
