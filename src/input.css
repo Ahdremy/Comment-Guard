@@ -10,4 +10,9 @@
     .btn-main{
         @apply bg-green-600 px-6 py-4 tracking-wide text-xl text-white font-bold rounded-lg shadow-sm hover:bg-green-700
     }
+
+    .btn-price{
+        @apply bg-bgMain px-6 py-4 tracking-wide text-xl text-white font-bold rounded-lg shadow-sm hover:bg-green-600
+    }
+
 }

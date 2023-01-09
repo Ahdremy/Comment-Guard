@@ -18,7 +18,7 @@
            <!-- Nav Container -->
            <div class="container mx-auto flex items-center justify-between space-x-20 py-6">
                  <!-- Logo -->
-                <div class="flex">
+                <div class="flex space-x-1">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                     </svg>
@@ -710,10 +710,699 @@
 
     <!-- Pricing Tab -->
     <section id="pricing">
-        <div class="container mx-auto">
+        <div class="container mx-auto m-24">
             <!-- Heading -->
-            <div class="text-center">
+            <div class="text-center m-3 space-y-2">
                 <h3 class="text-3xl font-bold">Pricing</h3>
+                <p class="tracking-wide">All-in plans that scale with comment volume.</p>
+            </div>
+
+            <!-- Monthly and Yearly Tabs -->
+
+            <div class="tabs flex items-center justify-center space-x-2 m-5">
+                <!-- Monthly Tab -->
+                <button class="tab px-4 py-2 font-bold uppercase rounded-full bg-bgMain text-white">Monthly</button>
+
+                <!-- Yearly Tab -->
+                <button class="tab px-4 py-2 font-bold uppercase rounded-full bg-white border-2 border-bgMain border-opacity-25">Yearly</button>
+            </div>
+
+            <!-- Pricing Block -->
+            <div class="flex flex-col items-center md:flex-row">
+                <!-- Block 1 -->
+                <div class="flex flex-col p-2 w-full md:w-1/5 rounded-md shadow-lg mb-6">
+                    <h3 class="font-bold text-2xl mb-3">Free Trial</h3>
+                    <h3 class="font-bold text-5xl mb-3">$0</h3>
+                    <p class="font-xs m-3 font-bold">No credit card<br> required</p>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>2 pages</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>Unlimited Users</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p class="font-bold">Up to 1,000 comments</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>All automated moderation filters</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>Email support</p>
+                    </div>
+                    <div class="m-4">
+                        <a href="#" class="btn-main">Try it free</a>
+                    </div>
+                    <p class="font-xs m-3 invisible">Price excludes VAT, if applicable.</p>
+                </div>
+
+                 <!-- Block 2 -->
+                 <div class="flex flex-col p-2 w-full md:w-1/5 rounded-md shadow-lg mb-6">
+                    <h3 class="font-bold text-2xl mb-3">Starter</h3>
+                    <div>
+                        <h3 class="font-bold text-5xl mb-3">$29<span class="text-base">/mo</span></h3>
+                    </div>
+                    <div class="hidden">
+                        <h3 class="font-bold text-5xl mb-3">$290<span class="text-base">/yr</span></h3>
+                    </div>
+                    <p class="font-xs font-bold m-3">No contracts, cancel any time.</p>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>Unlimited pages</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>Unlimited Users</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p class="font-bold">Up to 5,000 comments</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>All automated moderation filters</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>Email support</p>
+                    </div>
+                    <div class="m-4">
+                        <a href="#" class="btn-price">Checkout</a>
+                    </div>
+                    <p class="font-xs m-3">Price excludes VAT, if applicable.</p>
+                </div>
+
+                <!-- Block 3 -->
+                <div class="flex flex-col p-2 w-full md:w-1/5 rounded-md shadow-lg mb-6">
+                    <h3 class="font-bold text-2xl mb-3">Growth</h3>
+                    <div>
+                        <h3 class="font-bold text-5xl mb-3">$49<span class="text-base">/mo</span></h3>
+                    </div>
+                    <div class="hidden">
+                        <h3 class="font-bold text-5xl mb-3">$490<span class="text-base">/yr</span></h3>
+                    </div>
+                    <p class="font-xs font-bold m-3">No contracts, cancel any time.</p>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>Unlimited pages</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>Unlimited Users</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p class="font-bold">Up to 10,000 comments</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>All automated moderation filters</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>Email support</p>
+                    </div>
+                    <div class="m-4">
+                        <a href="#" class="btn-price">Checkout</a>
+                    </div>
+                    <p class="font-xs m-3">Price excludes VAT, if applicable.</p>
+                </div>
+
+                <!-- Block 4 -->
+                <div class="flex flex-col p-2 w-full md:w-1/5 rounded-md shadow-lg mb-6">
+                    <h3 class="font-bold text-2xl mb-3">Pro</h3>
+                    <div>
+                        <h3 class="font-bold text-5xl mb-3">$49<span class="text-base">/mo</span></h3>
+                    </div>
+                    <div class="hidden">
+                        <h3 class="font-bold text-5xl mb-3">$490<span class="text-base">/yr</span></h3>
+                    </div>
+                    <p class="font-xs font-bold m-3">No contracts, cancel any time.</p>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>Unlimited pages</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>Unlimited Users</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p class="font-bold">Up to 25,000 comments</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>All automated moderation filters</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>Email support</p>
+                    </div>
+                    <div class="m-4">
+                        <a href="#" class="btn-price">Checkout</a>
+                    </div>
+                    <p class="font-xs m-3">Price excludes VAT, if applicable.</p>
+                </div>
+
+                <!-- Block 5 -->
+                <div class="flex flex-col p-2 w-full md:w-1/5 rounded-md shadow-lg mb-6">
+                    <h3 class="font-bold text-2xl mb-3">Elite</h3>
+                    <div>
+                        <h3 class="font-bold text-5xl mb-3">$199<span class="text-base">/mo</span></h3>
+                    </div>
+                    <div class="hidden">
+                        <h3 class="font-bold text-5xl mb-3">$1990<span class="text-base">/yr</span></h3>
+                    </div>
+                    <p class="font-xs font-bold m-3">No contracts, cancel any time.</p>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>Unlimited pages</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>Unlimited Users</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p class="font-bold">Up to 50,000 comments</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>All automated moderation filters</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <!-- SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12l5 5l10 -10" />
+                        </svg>
+                        <p>Email support</p>
+                    </div>
+                    <div class="m-4">
+                        <a href="#" class="btn-price">Checkout</a>
+                    </div>
+                    <p class="font-xs m-3">Price excludes VAT, if applicable.</p>
+                </div>
+            </div>
+
+            <!-- Reach Out -->
+            <p class="text-sm text-center font-semibold m-6">Need more comments? <a href="#" class="text-green-600 underline hover:text-bgMain">Reach out to us.</a></p>
+
+            <!-- Extra Reviews and Features -->
+    
+            <!-- Extra Reviews Container -->
+            <div class="container flex flex-col justify-between items-center m-10 p-6 space-y-10 md:space-y-0 md:space-x-4 mx-auto md:flex-row">
+
+                <!-- Review 1 -->
+                <div class="flex flex-col items-center space-y-2 w-full md:w-1/3 mb-2 md:mb-0">
+                    
+                    <!-- SVG -->
+                    <div class="flex items-center space-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+
+                    </div>
+
+                    <!-- Contents -->
+                    <p class="text-sm md:text-base pb-3 text-center">CommentGuard keeping my comments free<br> of spam has <span class="font-bold">noticeably increased my ads'<br> conversion rates</span>. It has been an absolute<br> game changer for my business.</p>
+
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="flex flex-col items-center space-y-2 w-full md:w-1/3 mb-2 md:mb-0">
+                    
+                    <!-- SVG -->
+                    <div class="flex items-center space-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+
+                    </div>
+
+                    <!-- Contents -->
+                    <p class="text-sm md:text-base pb-3 text-center">CommentGuard gives me <span class="font-bold">peace of mind<br> that my ad or post comments aren't going<br> to be spammed</span>. Truly, I don't know what<br> small business owners do without it.</p>
+                </div>
+                
+                 <!-- Review 3 -->
+                 <div class="flex flex-col items-center space-y-2 w-full md:w-1/3 mb-2 md:mb-0">
+                    
+                    <!-- SVG -->
+                    <div class="flex items-center space-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+
+                    </div>
+
+                    <!-- Contents -->
+                    <p class="text-sm md:text-base pb-3 text-center">CommentGuard keeping my comments free<br> of spam has <span class="font-bold">noticeably increased my ads'<br> conversion rates</span>. It has been an absolute<br> game changer for my business.</p>
+
+                </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faqs">
+        <div class="container mx-auto">
+            <!-- FAQ Heading -->
+            <h2 class="font-bold text-3xl text-center md:text-4xl">Frequently Asked Questions</h2>
+
+            <!-- FAQ Accordion -->
+            <div class="container mx-auto px-6 mb-32">
+                <!-- Accordion Container -->
+            <div class="max-w-2xl m-8 mx-auto overflow-hidden">
+
+                <!-- Tab 1 -->
+                <div class="py-1 border-b outline-none group" tabindex="1">
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between py-3 transition duration-500 cursor-pointer group ease">
+                        <!-- Tab Title -->
+                        <div class="transition duration-500 ease group-hover:text-green-600">Is this software approved by Facebook and Instagram?</div>
+                        <!-- Arrow -->
+                        <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                    </div>
+                        
+                        <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 text-justify text-gray-700">
+                            CommentGuard has been manually reviewed by the Meta App Review team and was approved. It's 100% compliant with Meta's policies so you'll never put your Facebook or Instagram account at risk by using our software for automated comment moderation.
+                        </p>
+                    </div>
+                        
+                </div>
+
+                <!-- Tab 2 -->
+                <div class="py-1 border-b outline-none group" tabindex="2">
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between py-3 transition duration-500 cursor-pointer group ease">
+                        <!-- Tab Title -->
+                        <div class="transition duration-500 ease group-hover:text-green-600">How easy is it to integrate with CommentGuard?</div>
+                        <!-- Arrow -->
+                        <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                    </div>
+                        
+                        <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 text-justify text-gray-700">
+                            After signing up you'll be asked to connect your Facebook account and select the Facebook Pages and Instagram Business Accounts you'd like to use with CommentGuard. Allowing CommentGuard to moderate comments on your behalf only takes a few clicks.
+                        </p>
+                    </div>
+                        
+                </div>
+
+                <!-- Tab 3 -->
+                <div class="py-1 border-b outline-none group" tabindex="3">
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between py-3 transition duration-500 cursor-pointer group ease">
+                        <!-- Tab Title -->
+                        <div class="transition duration-500 ease group-hover:text-green-600">Do you offer a free trial?</div>
+                        <!-- Arrow -->
+                        <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                    </div>
+                        
+                        <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 text-justify text-gray-700">
+                            Yes, you can try CommentGuard free when signing up for a trial account. During the trial you'll have full access to the software, so you can see if you like it or not. After 7 days your trial will expire automatically. No credit card is needed to start your free trial.
+                    </div>
+                        
+                </div>
+
+                <!-- Tab 4 -->
+                <div class="py-1 border-b outline-none group" tabindex="4">
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between py-3 transition duration-500 cursor-pointer group ease">
+                        <!-- Tab Title -->
+                        <div class="transition duration-500 ease group-hover:text-green-600">Which payment methods do you accept?</div>
+                        <!-- Arrow -->
+                        <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                    </div>
+                        
+                        <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 text-justify text-gray-700">
+                            We only accept credit card payments.
+                    </div>
+                        
+                </div>
+
+                <!-- Tab 5 -->
+                <div class="py-1 border-b outline-none group" tabindex="5">
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between py-3 transition duration-500 cursor-pointer group ease">
+                        <!-- Tab Title -->
+                        <div class="transition duration-500 ease group-hover:text-green-600">What happens if I exceed my comments/mo?</div>
+                        <!-- Arrow -->
+                        <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                    </div>
+                        
+                        <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 text-justify text-gray-700">
+                            Nothing, the software will keep working. We'll just reach out to you and ask you to upgrade depending on your comment volume.
+                    </div>
+                        
+                </div>
+
+                <!-- Tab 6 -->
+                <div class="py-1 border-b outline-none group" tabindex="6">
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between py-3 transition duration-500 cursor-pointer group ease">
+                        <!-- Tab Title -->
+                        <div class="transition duration-500 ease group-hover:text-green-600">What does 30 day data retention mean?</div>
+                        <!-- Arrow -->
+                        <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                    </div>
+                        
+                        <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 text-justify text-gray-700">
+                            Comments on your posts and ads will be automatically imported into CommentGuard and saved in our database. We store these comments for 30 days and then erase them from our application.
+                    </div>
+                        
+                </div>
+
+                <!-- Tab 7 -->
+                <div class="py-1 border-b outline-none group" tabindex="7">
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between py-3 transition duration-500 cursor-pointer group ease">
+                        <!-- Tab Title -->
+                        <div class="transition duration-500 ease group-hover:text-green-600">Can I choose different moderation settings for organic vs paid?</div>
+                        <!-- Arrow -->
+                        <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                    </div>
+                        
+                        <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 text-justify text-gray-700">
+                            CommentGuard moderation settings are specified at the level of each individual Facebook Page or Instagram Business Account. They're applied to all comments received on organic posts as well as paid ads. We don't support different moderation settings for organic posts vs paid ads, because there's an unclear overlap between these (organic posts can be boosted as sponsored posts for example).
+                    </div>
+                        
+                </div>
+
+                <!-- Tab 8 -->
+                <div class="py-1 border-b outline-none group" tabindex="8">
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between py-3 transition duration-500 cursor-pointer group ease">
+                        <!-- Tab Title -->
+                        <div class="transition duration-500 ease group-hover:text-green-600">Does this work for Facebook sponsored page posts?</div>
+                        <!-- Arrow -->
+                        <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                    </div>
+                        
+                        <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 text-justify text-gray-700">
+                            CommentGuard supports automated moderation of comments on all types of Facebook and Instagram organic posts and ads, including sponsored Facebook page posts as well as ads created through Facebook Ads Manager. We also support stories and reels.
+                    </div>
+                        
+                </div>
+
+                <!-- Tab 9 -->
+                <div class="py-1 border-b outline-none group" tabindex="9">
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between py-3 transition duration-500 cursor-pointer group ease">
+                        <!-- Tab Title -->
+                        <div class="transition duration-500 ease group-hover:text-green-600">Which languages do you support?</div>
+                        <!-- Arrow -->
+                        <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                    </div>
+                        
+                        <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 text-justify text-gray-700">
+                            Our AI filters support: English, Spanish, German, French, Arabic, Japanese, Hindi, Italian, Portuguese and Russian.
+                    </div>
+                        
+                </div>
+
+                <!-- Tab 10 -->
+                <div class="py-1 border-b outline-none group" tabindex="10">
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between py-3 transition duration-500 cursor-pointer group ease">
+                        <!-- Tab Title -->
+                        <div class="transition duration-500 ease group-hover:text-green-600">Do you import my comment history?</div>
+                        <!-- Arrow -->
+                        <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                    </div>
+                        
+                        <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 text-justify text-gray-700">
+                            CommentGuard processes new comments, starting from the moment you add a Facebook or Instagram page to your account. It does not retroactively import comments that were received before the Facebook or Instagram page was added to our software.
+                    </div>
+                        
+                </div>
+
+                <!-- Tab 11 -->
+                <div class="py-1 border-b outline-none group" tabindex="11">
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between py-3 transition duration-500 cursor-pointer group ease">
+                        <!-- Tab Title -->
+                        <div class="transition duration-500 ease group-hover:text-green-600">Why do you hide instead of delete comments?</div>
+                        <!-- Arrow -->
+                        <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                    </div>
+                        
+                        <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 text-justify text-gray-700">
+                            CommentGuard automatically hides comments based on your moderation settings, but doesn't automatically delete comments. This is on purpose and for two important reasons. Firstly, hiding a comment on Facebook means the author and his or her friends can still see it while at the same time it's hidden from the broad public. This prevents further outrage and the feeling of censorship, while limiting the public visibility of harmful comments. Secondly, hiding is a reversible action, meaning comments can still be made publicly visible again. You can manually unhide or delete comments that were hidden inside your dashboard.
+                    </div>
+                        
+                </div>
+
+                <!-- Tab 12 -->
+                <div class="py-1 border-b outline-none group" tabindex="12">
+                    <!-- Tab Flex Container -->
+                    <div class="flex items-center justify-between py-3 transition duration-500 cursor-pointer group ease">
+                        <!-- Tab Title -->
+                        <div class="transition duration-500 ease group-hover:text-green-600">Can I completely disable comments with CommentGuard?</div>
+                        <!-- Arrow -->
+                        <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38a169" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </div>
+                    </div>
+                        
+                        <!-- Tab Inner Content -->
+                    <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+                        <p class="py-2 text-justify text-gray-700">
+                            You can enable our "private mode" setting, which will instruct CommentGuard to automatically hide all new comments within seconds of being posted. This way you're able to review comments and approve them before they'll be publicly visible.
+                        
+                </div>
+     
+            </div>
             </div>
         </div>
     </section>
