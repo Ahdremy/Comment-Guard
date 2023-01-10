@@ -12,7 +12,7 @@
     }
 
     .btn-price{
-        @apply bg-bgMain px-6 py-4 tracking-wide text-xl text-white font-bold rounded-lg shadow-sm hover:bg-green-600
+        @apply border-2 border-bgMain hover:border-0 px-6 py-4 tracking-wide text-xl hover:text-white font-bold rounded-lg shadow-sm hover:bg-green-600
     }
 
 }
